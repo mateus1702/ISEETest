@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "d38f5a08-c0b8-4693-9ef0-453e24bee21f",
+		"name": "Currency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Convert",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/currency/convert?from=USD&to=BRL&amount=1.5",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"currency",
+						"convert"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "USD"
+						},
+						{
+							"key": "to",
+							"value": "BRL"
+						},
+						{
+							"key": "amount",
+							"value": "1.5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/currency",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"currency"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

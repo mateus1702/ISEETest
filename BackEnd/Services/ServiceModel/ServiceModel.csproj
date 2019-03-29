@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.6.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainModel\DomainModel.csproj" />
+    <ProjectReference Include="..\Infrastructure\Repository\RepositoryModel\RepositoryModel.csproj" />
+    <ProjectReference Include="..\Infrastructure\Services\CurrencyConverterService\CurrencyConverterService.csproj" />
+  </ItemGroup>
+
+</Project>

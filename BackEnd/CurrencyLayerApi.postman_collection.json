@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "417eefa5-83f5-427c-89e5-c61ed1c74ff9",
+		"name": "CurrencyLayerApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://apilayer.net/api/list?access_key={{accessKey}}",
+					"protocol": "http",
+					"host": [
+						"apilayer",
+						"net"
+					],
+					"path": [
+						"api",
+						"list"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "{{accessKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://apilayer.net/api/convert?access_key={{accessKey}}&from=USD&to=BRL&format=1&amount=1",
+					"protocol": "http",
+					"host": [
+						"apilayer",
+						"net"
+					],
+					"path": [
+						"api",
+						"convert"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "{{accessKey}}"
+						},
+						{
+							"key": "from",
+							"value": "USD"
+						},
+						{
+							"key": "to",
+							"value": "BRL"
+						},
+						{
+							"key": "format",
+							"value": "1"
+						},
+						{
+							"key": "amount",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
