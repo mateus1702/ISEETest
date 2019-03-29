@@ -2,8 +2,8 @@
 build
 node_modules
 
-*.suo
-*.user
+
+
 .vs/
 
 bin
